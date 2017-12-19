@@ -53,5 +53,5 @@ set(CMAKE_MAKEFILE_PRODUCTS
 
 # Dependency information for all targets:
 set(CMAKE_DEPEND_INFO_FILES
-  "CMakeFiles/g2o_ba.dir/DependInfo.cmake"
+  "CMakeFiles/g2o_driver.dir/DependInfo.cmake"
   )

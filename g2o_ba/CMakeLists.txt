@@ -29,5 +29,5 @@ file(GLOB SRC src/*.c*)
 #     ${G2O_LIBRARIES}
 # )
 
-add_executable(g2o_ba src/main.cc)
+add_executable(g2o_driver ${SRC})
 # target_link_libraries(g2o_ba ${PROJECT_NAME})

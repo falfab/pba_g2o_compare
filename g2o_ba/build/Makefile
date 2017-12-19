@@ -111,44 +111,71 @@ depend:
 .PHONY : depend
 
 #=============================================================================
-# Target rules for targets named g2o_ba
+# Target rules for targets named g2o_driver
 
 # Build rule for target.
-g2o_ba: cmake_check_build_system
-	$(MAKE) -f CMakeFiles/Makefile2 g2o_ba
-.PHONY : g2o_ba
+g2o_driver: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 g2o_driver
+.PHONY : g2o_driver
 
 # fast build rule for target.
-g2o_ba/fast:
-	$(MAKE) -f CMakeFiles/g2o_ba.dir/build.make CMakeFiles/g2o_ba.dir/build
-.PHONY : g2o_ba/fast
+g2o_driver/fast:
+	$(MAKE) -f CMakeFiles/g2o_driver.dir/build.make CMakeFiles/g2o_driver.dir/build
+.PHONY : g2o_driver/fast
 
-src/main.o: src/main.cc.o
+src/g2o_driver.o: src/g2o_driver.cc.o
 
-.PHONY : src/main.o
+.PHONY : src/g2o_driver.o
 
 # target to build an object file
-src/main.cc.o:
-	$(MAKE) -f CMakeFiles/g2o_ba.dir/build.make CMakeFiles/g2o_ba.dir/src/main.cc.o
-.PHONY : src/main.cc.o
+src/g2o_driver.cc.o:
+	$(MAKE) -f CMakeFiles/g2o_driver.dir/build.make CMakeFiles/g2o_driver.dir/src/g2o_driver.cc.o
+.PHONY : src/g2o_driver.cc.o
 
-src/main.i: src/main.cc.i
+src/g2o_driver.i: src/g2o_driver.cc.i
 
-.PHONY : src/main.i
+.PHONY : src/g2o_driver.i
 
 # target to preprocess a source file
-src/main.cc.i:
-	$(MAKE) -f CMakeFiles/g2o_ba.dir/build.make CMakeFiles/g2o_ba.dir/src/main.cc.i
-.PHONY : src/main.cc.i
+src/g2o_driver.cc.i:
+	$(MAKE) -f CMakeFiles/g2o_driver.dir/build.make CMakeFiles/g2o_driver.dir/src/g2o_driver.cc.i
+.PHONY : src/g2o_driver.cc.i
 
-src/main.s: src/main.cc.s
+src/g2o_driver.s: src/g2o_driver.cc.s
 
-.PHONY : src/main.s
+.PHONY : src/g2o_driver.s
 
 # target to generate assembly for a file
-src/main.cc.s:
-	$(MAKE) -f CMakeFiles/g2o_ba.dir/build.make CMakeFiles/g2o_ba.dir/src/main.cc.s
-.PHONY : src/main.cc.s
+src/g2o_driver.cc.s:
+	$(MAKE) -f CMakeFiles/g2o_driver.dir/build.make CMakeFiles/g2o_driver.dir/src/g2o_driver.cc.s
+.PHONY : src/g2o_driver.cc.s
+
+src/parser.o: src/parser.cc.o
+
+.PHONY : src/parser.o
+
+# target to build an object file
+src/parser.cc.o:
+	$(MAKE) -f CMakeFiles/g2o_driver.dir/build.make CMakeFiles/g2o_driver.dir/src/parser.cc.o
+.PHONY : src/parser.cc.o
+
+src/parser.i: src/parser.cc.i
+
+.PHONY : src/parser.i
+
+# target to preprocess a source file
+src/parser.cc.i:
+	$(MAKE) -f CMakeFiles/g2o_driver.dir/build.make CMakeFiles/g2o_driver.dir/src/parser.cc.i
+.PHONY : src/parser.cc.i
+
+src/parser.s: src/parser.cc.s
+
+.PHONY : src/parser.s
+
+# target to generate assembly for a file
+src/parser.cc.s:
+	$(MAKE) -f CMakeFiles/g2o_driver.dir/build.make CMakeFiles/g2o_driver.dir/src/parser.cc.s
+.PHONY : src/parser.cc.s
 
 # Help Target
 help:
@@ -158,10 +185,13 @@ help:
 	@echo "... depend"
 	@echo "... edit_cache"
 	@echo "... rebuild_cache"
-	@echo "... g2o_ba"
-	@echo "... src/main.o"
-	@echo "... src/main.i"
-	@echo "... src/main.s"
+	@echo "... g2o_driver"
+	@echo "... src/g2o_driver.o"
+	@echo "... src/g2o_driver.i"
+	@echo "... src/g2o_driver.s"
+	@echo "... src/parser.o"
+	@echo "... src/parser.i"
+	@echo "... src/parser.s"
 .PHONY : help
 
 

@@ -1,0 +1,20 @@
+#IncludeRegexLine: ^[ 	]*#[ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+../include/parser.h
+
+/home/nvidia/pba_g2o_compare/g2o_ba/src/g2o_driver.cc
+iostream
+-
+parser.h
+/home/nvidia/pba_g2o_compare/g2o_ba/src/parser.h
+
+/home/nvidia/pba_g2o_compare/g2o_ba/src/parser.cc
+parser.h
+/home/nvidia/pba_g2o_compare/g2o_ba/src/parser.h
+
