@@ -12,7 +12,7 @@ if(NOT OpenCV_FOUND)
     message(FATAL_ERROR "OpenCV > 2.4.3 not found.")
 endif()
 
-set(G2O_LIBRARIES ${PROJECT_SOURCE_DIR}/thirdparty/g2o/lib/libg2o_openmp.so)
+set(G2O_LIBRARIES ${PROJECT_SOURCE_DIR}/thirdparty/g2o/lib/libg2o.so)
 
 include_directories(
 ${PROJECT_SOURCE_DIR}
@@ -24,10 +24,10 @@ set(CMAKE_RUNTIME_OUTPUT_DIRECTORY ${PROJECT_SOURCE_DIR}/bin)
 file(GLOB INCLUDES include/*.h*)
 file(GLOB SRC src/*.c*)
 
-# target_link_libraries(
-#     ${OpenCV_LIBS}
-#     ${G2O_LIBRARIES}
-# )
-
 add_executable(g2o_driver ${SRC})
+
+target_link_libraries(g2o_driver
+    ${OpenCV_LIBS}
+    ${G2O_LIBRARIES}
+)
 # target_link_libraries(g2o_ba ${PROJECT_NAME})

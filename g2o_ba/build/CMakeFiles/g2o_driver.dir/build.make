@@ -57,9 +57,81 @@ include CMakeFiles/g2o_driver.dir/progress.make
 # Include the compile flags for this target's objects.
 include CMakeFiles/g2o_driver.dir/flags.make
 
+CMakeFiles/g2o_driver.dir/src/bundle_adjustment.cc.o: CMakeFiles/g2o_driver.dir/flags.make
+CMakeFiles/g2o_driver.dir/src/bundle_adjustment.cc.o: ../src/bundle_adjustment.cc
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/nvidia/pba_g2o_compare/g2o_ba/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/g2o_driver.dir/src/bundle_adjustment.cc.o"
+	/usr/bin/c++   $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/g2o_driver.dir/src/bundle_adjustment.cc.o -c /home/nvidia/pba_g2o_compare/g2o_ba/src/bundle_adjustment.cc
+
+CMakeFiles/g2o_driver.dir/src/bundle_adjustment.cc.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/g2o_driver.dir/src/bundle_adjustment.cc.i"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/nvidia/pba_g2o_compare/g2o_ba/src/bundle_adjustment.cc > CMakeFiles/g2o_driver.dir/src/bundle_adjustment.cc.i
+
+CMakeFiles/g2o_driver.dir/src/bundle_adjustment.cc.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/g2o_driver.dir/src/bundle_adjustment.cc.s"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/nvidia/pba_g2o_compare/g2o_ba/src/bundle_adjustment.cc -o CMakeFiles/g2o_driver.dir/src/bundle_adjustment.cc.s
+
+CMakeFiles/g2o_driver.dir/src/bundle_adjustment.cc.o.requires:
+
+.PHONY : CMakeFiles/g2o_driver.dir/src/bundle_adjustment.cc.o.requires
+
+CMakeFiles/g2o_driver.dir/src/bundle_adjustment.cc.o.provides: CMakeFiles/g2o_driver.dir/src/bundle_adjustment.cc.o.requires
+	$(MAKE) -f CMakeFiles/g2o_driver.dir/build.make CMakeFiles/g2o_driver.dir/src/bundle_adjustment.cc.o.provides.build
+.PHONY : CMakeFiles/g2o_driver.dir/src/bundle_adjustment.cc.o.provides
+
+CMakeFiles/g2o_driver.dir/src/bundle_adjustment.cc.o.provides.build: CMakeFiles/g2o_driver.dir/src/bundle_adjustment.cc.o
+
+
+CMakeFiles/g2o_driver.dir/src/keyframe.cc.o: CMakeFiles/g2o_driver.dir/flags.make
+CMakeFiles/g2o_driver.dir/src/keyframe.cc.o: ../src/keyframe.cc
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/nvidia/pba_g2o_compare/g2o_ba/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object CMakeFiles/g2o_driver.dir/src/keyframe.cc.o"
+	/usr/bin/c++   $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/g2o_driver.dir/src/keyframe.cc.o -c /home/nvidia/pba_g2o_compare/g2o_ba/src/keyframe.cc
+
+CMakeFiles/g2o_driver.dir/src/keyframe.cc.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/g2o_driver.dir/src/keyframe.cc.i"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/nvidia/pba_g2o_compare/g2o_ba/src/keyframe.cc > CMakeFiles/g2o_driver.dir/src/keyframe.cc.i
+
+CMakeFiles/g2o_driver.dir/src/keyframe.cc.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/g2o_driver.dir/src/keyframe.cc.s"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/nvidia/pba_g2o_compare/g2o_ba/src/keyframe.cc -o CMakeFiles/g2o_driver.dir/src/keyframe.cc.s
+
+CMakeFiles/g2o_driver.dir/src/keyframe.cc.o.requires:
+
+.PHONY : CMakeFiles/g2o_driver.dir/src/keyframe.cc.o.requires
+
+CMakeFiles/g2o_driver.dir/src/keyframe.cc.o.provides: CMakeFiles/g2o_driver.dir/src/keyframe.cc.o.requires
+	$(MAKE) -f CMakeFiles/g2o_driver.dir/build.make CMakeFiles/g2o_driver.dir/src/keyframe.cc.o.provides.build
+.PHONY : CMakeFiles/g2o_driver.dir/src/keyframe.cc.o.provides
+
+CMakeFiles/g2o_driver.dir/src/keyframe.cc.o.provides.build: CMakeFiles/g2o_driver.dir/src/keyframe.cc.o
+
+
+CMakeFiles/g2o_driver.dir/src/mappoint.cc.o: CMakeFiles/g2o_driver.dir/flags.make
+CMakeFiles/g2o_driver.dir/src/mappoint.cc.o: ../src/mappoint.cc
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/nvidia/pba_g2o_compare/g2o_ba/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object CMakeFiles/g2o_driver.dir/src/mappoint.cc.o"
+	/usr/bin/c++   $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/g2o_driver.dir/src/mappoint.cc.o -c /home/nvidia/pba_g2o_compare/g2o_ba/src/mappoint.cc
+
+CMakeFiles/g2o_driver.dir/src/mappoint.cc.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/g2o_driver.dir/src/mappoint.cc.i"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/nvidia/pba_g2o_compare/g2o_ba/src/mappoint.cc > CMakeFiles/g2o_driver.dir/src/mappoint.cc.i
+
+CMakeFiles/g2o_driver.dir/src/mappoint.cc.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/g2o_driver.dir/src/mappoint.cc.s"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/nvidia/pba_g2o_compare/g2o_ba/src/mappoint.cc -o CMakeFiles/g2o_driver.dir/src/mappoint.cc.s
+
+CMakeFiles/g2o_driver.dir/src/mappoint.cc.o.requires:
+
+.PHONY : CMakeFiles/g2o_driver.dir/src/mappoint.cc.o.requires
+
+CMakeFiles/g2o_driver.dir/src/mappoint.cc.o.provides: CMakeFiles/g2o_driver.dir/src/mappoint.cc.o.requires
+	$(MAKE) -f CMakeFiles/g2o_driver.dir/build.make CMakeFiles/g2o_driver.dir/src/mappoint.cc.o.provides.build
+.PHONY : CMakeFiles/g2o_driver.dir/src/mappoint.cc.o.provides
+
+CMakeFiles/g2o_driver.dir/src/mappoint.cc.o.provides.build: CMakeFiles/g2o_driver.dir/src/mappoint.cc.o
+
+
 CMakeFiles/g2o_driver.dir/src/g2o_driver.cc.o: CMakeFiles/g2o_driver.dir/flags.make
 CMakeFiles/g2o_driver.dir/src/g2o_driver.cc.o: ../src/g2o_driver.cc
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/nvidia/pba_g2o_compare/g2o_ba/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/g2o_driver.dir/src/g2o_driver.cc.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/nvidia/pba_g2o_compare/g2o_ba/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building CXX object CMakeFiles/g2o_driver.dir/src/g2o_driver.cc.o"
 	/usr/bin/c++   $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/g2o_driver.dir/src/g2o_driver.cc.o -c /home/nvidia/pba_g2o_compare/g2o_ba/src/g2o_driver.cc
 
 CMakeFiles/g2o_driver.dir/src/g2o_driver.cc.i: cmake_force
@@ -83,7 +155,7 @@ CMakeFiles/g2o_driver.dir/src/g2o_driver.cc.o.provides.build: CMakeFiles/g2o_dri
 
 CMakeFiles/g2o_driver.dir/src/parser.cc.o: CMakeFiles/g2o_driver.dir/flags.make
 CMakeFiles/g2o_driver.dir/src/parser.cc.o: ../src/parser.cc
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/nvidia/pba_g2o_compare/g2o_ba/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object CMakeFiles/g2o_driver.dir/src/parser.cc.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/nvidia/pba_g2o_compare/g2o_ba/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Building CXX object CMakeFiles/g2o_driver.dir/src/parser.cc.o"
 	/usr/bin/c++   $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/g2o_driver.dir/src/parser.cc.o -c /home/nvidia/pba_g2o_compare/g2o_ba/src/parser.cc
 
 CMakeFiles/g2o_driver.dir/src/parser.cc.i: cmake_force
@@ -107,17 +179,47 @@ CMakeFiles/g2o_driver.dir/src/parser.cc.o.provides.build: CMakeFiles/g2o_driver.
 
 # Object files for target g2o_driver
 g2o_driver_OBJECTS = \
+"CMakeFiles/g2o_driver.dir/src/bundle_adjustment.cc.o" \
+"CMakeFiles/g2o_driver.dir/src/keyframe.cc.o" \
+"CMakeFiles/g2o_driver.dir/src/mappoint.cc.o" \
 "CMakeFiles/g2o_driver.dir/src/g2o_driver.cc.o" \
 "CMakeFiles/g2o_driver.dir/src/parser.cc.o"
 
 # External object files for target g2o_driver
 g2o_driver_EXTERNAL_OBJECTS =
 
+../bin/g2o_driver: CMakeFiles/g2o_driver.dir/src/bundle_adjustment.cc.o
+../bin/g2o_driver: CMakeFiles/g2o_driver.dir/src/keyframe.cc.o
+../bin/g2o_driver: CMakeFiles/g2o_driver.dir/src/mappoint.cc.o
 ../bin/g2o_driver: CMakeFiles/g2o_driver.dir/src/g2o_driver.cc.o
 ../bin/g2o_driver: CMakeFiles/g2o_driver.dir/src/parser.cc.o
 ../bin/g2o_driver: CMakeFiles/g2o_driver.dir/build.make
+../bin/g2o_driver: /usr/lib/libopencv_vstab.so.2.4.13
+../bin/g2o_driver: /usr/lib/libopencv_imuvstab.so.2.4.13
+../bin/g2o_driver: /usr/lib/libopencv_facedetect.so.2.4.13
+../bin/g2o_driver: /usr/lib/libopencv_esm_panorama.so.2.4.13
+../bin/g2o_driver: /usr/lib/libopencv_detection_based_tracker.so.2.4.13
+../bin/g2o_driver: /usr/lib/libopencv_videostab.so.2.4.13
+../bin/g2o_driver: /usr/lib/libopencv_ts.a
+../bin/g2o_driver: /usr/lib/libopencv_superres.so.2.4.13
+../bin/g2o_driver: /usr/lib/libopencv_contrib.so.2.4.13
+../bin/g2o_driver: ../thirdparty/g2o/lib/libg2o.so
+../bin/g2o_driver: /usr/lib/libopencv_tegra.so.2.4.13
+../bin/g2o_driver: /usr/lib/libopencv_stitching.so.2.4.13
+../bin/g2o_driver: /usr/lib/libopencv_gpu.so.2.4.13
+../bin/g2o_driver: /usr/lib/libopencv_photo.so.2.4.13
+../bin/g2o_driver: /usr/lib/libopencv_legacy.so.2.4.13
+../bin/g2o_driver: /usr/lib/libopencv_video.so.2.4.13
+../bin/g2o_driver: /usr/lib/libopencv_objdetect.so.2.4.13
+../bin/g2o_driver: /usr/lib/libopencv_ml.so.2.4.13
+../bin/g2o_driver: /usr/lib/libopencv_calib3d.so.2.4.13
+../bin/g2o_driver: /usr/lib/libopencv_features2d.so.2.4.13
+../bin/g2o_driver: /usr/lib/libopencv_highgui.so.2.4.13
+../bin/g2o_driver: /usr/lib/libopencv_imgproc.so.2.4.13
+../bin/g2o_driver: /usr/lib/libopencv_flann.so.2.4.13
+../bin/g2o_driver: /usr/lib/libopencv_core.so.2.4.13
 ../bin/g2o_driver: CMakeFiles/g2o_driver.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/nvidia/pba_g2o_compare/g2o_ba/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Linking CXX executable ../bin/g2o_driver"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/nvidia/pba_g2o_compare/g2o_ba/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Linking CXX executable ../bin/g2o_driver"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/g2o_driver.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.
@@ -125,6 +227,9 @@ CMakeFiles/g2o_driver.dir/build: ../bin/g2o_driver
 
 .PHONY : CMakeFiles/g2o_driver.dir/build
 
+CMakeFiles/g2o_driver.dir/requires: CMakeFiles/g2o_driver.dir/src/bundle_adjustment.cc.o.requires
+CMakeFiles/g2o_driver.dir/requires: CMakeFiles/g2o_driver.dir/src/keyframe.cc.o.requires
+CMakeFiles/g2o_driver.dir/requires: CMakeFiles/g2o_driver.dir/src/mappoint.cc.o.requires
 CMakeFiles/g2o_driver.dir/requires: CMakeFiles/g2o_driver.dir/src/g2o_driver.cc.o.requires
 CMakeFiles/g2o_driver.dir/requires: CMakeFiles/g2o_driver.dir/src/parser.cc.o.requires
 

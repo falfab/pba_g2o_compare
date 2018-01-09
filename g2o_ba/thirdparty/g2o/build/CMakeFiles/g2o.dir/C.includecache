@@ -6,11 +6,11 @@
 
 #IncludeRegexTransform: 
 
-/home/nvidia/orb_slam_cuda/Thirdparty/g2o/g2o/stuff/os_specific.c
+/home/nvidia/pba_g2o_compare/g2o_ba/thirdparty/g2o/g2o/stuff/os_specific.c
 os_specific.h
-/home/nvidia/orb_slam_cuda/Thirdparty/g2o/g2o/stuff/os_specific.h
+/home/nvidia/pba_g2o_compare/g2o_ba/thirdparty/g2o/g2o/stuff/os_specific.h
 
-/home/nvidia/orb_slam_cuda/Thirdparty/g2o/g2o/stuff/os_specific.h
+/home/nvidia/pba_g2o_compare/g2o_ba/thirdparty/g2o/g2o/stuff/os_specific.h
 stdio.h
 -
 stdlib.h

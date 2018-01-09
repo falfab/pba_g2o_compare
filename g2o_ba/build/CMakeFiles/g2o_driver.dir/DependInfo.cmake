@@ -4,7 +4,10 @@ set(CMAKE_DEPENDS_LANGUAGES
   )
 # The set of files for implicit dependencies of each language:
 set(CMAKE_DEPENDS_CHECK_CXX
+  "/home/nvidia/pba_g2o_compare/g2o_ba/src/bundle_adjustment.cc" "/home/nvidia/pba_g2o_compare/g2o_ba/build/CMakeFiles/g2o_driver.dir/src/bundle_adjustment.cc.o"
   "/home/nvidia/pba_g2o_compare/g2o_ba/src/g2o_driver.cc" "/home/nvidia/pba_g2o_compare/g2o_ba/build/CMakeFiles/g2o_driver.dir/src/g2o_driver.cc.o"
+  "/home/nvidia/pba_g2o_compare/g2o_ba/src/keyframe.cc" "/home/nvidia/pba_g2o_compare/g2o_ba/build/CMakeFiles/g2o_driver.dir/src/keyframe.cc.o"
+  "/home/nvidia/pba_g2o_compare/g2o_ba/src/mappoint.cc" "/home/nvidia/pba_g2o_compare/g2o_ba/build/CMakeFiles/g2o_driver.dir/src/mappoint.cc.o"
   "/home/nvidia/pba_g2o_compare/g2o_ba/src/parser.cc" "/home/nvidia/pba_g2o_compare/g2o_ba/build/CMakeFiles/g2o_driver.dir/src/parser.cc.o"
   )
 set(CMAKE_CXX_COMPILER_ID "GNU")

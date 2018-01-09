@@ -6,15 +6,57 @@
 
 #IncludeRegexTransform: 
 
+../include/bundle_adjustment.h
+keyframe.h
+../include/keyframe.h
+mappoint.h
+../include/mappoint.h
+
+../include/keyframe.h
+opencv2/core/core.hpp
+-
+
+../include/mappoint.h
+opencv2/core/core.hpp
+-
+keyframe.h
+../include/keyframe.h
+
 ../include/parser.h
+keyframe.h
+../include/keyframe.h
+mappoint.h
+../include/mappoint.h
+opencv2/opencv.hpp
+-
+
+/home/nvidia/pba_g2o_compare/g2o_ba/src/bundle_adjustment.cc
+bundle_adjustment.h
+/home/nvidia/pba_g2o_compare/g2o_ba/src/bundle_adjustment.h
 
 /home/nvidia/pba_g2o_compare/g2o_ba/src/g2o_driver.cc
 iostream
 -
 parser.h
 /home/nvidia/pba_g2o_compare/g2o_ba/src/parser.h
+mappoint.h
+/home/nvidia/pba_g2o_compare/g2o_ba/src/mappoint.h
+keyframe.h
+/home/nvidia/pba_g2o_compare/g2o_ba/src/keyframe.h
+
+/home/nvidia/pba_g2o_compare/g2o_ba/src/keyframe.cc
+keyframe.h
+/home/nvidia/pba_g2o_compare/g2o_ba/src/keyframe.h
+
+/home/nvidia/pba_g2o_compare/g2o_ba/src/mappoint.cc
+mappoint.h
+/home/nvidia/pba_g2o_compare/g2o_ba/src/mappoint.h
 
 /home/nvidia/pba_g2o_compare/g2o_ba/src/parser.cc
 parser.h
 /home/nvidia/pba_g2o_compare/g2o_ba/src/parser.h
+iostream
+-
+fstream
+-
 

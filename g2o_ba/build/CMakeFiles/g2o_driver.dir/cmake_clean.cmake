@@ -1,4 +1,7 @@
 file(REMOVE_RECURSE
+  "CMakeFiles/g2o_driver.dir/src/bundle_adjustment.cc.o"
+  "CMakeFiles/g2o_driver.dir/src/keyframe.cc.o"
+  "CMakeFiles/g2o_driver.dir/src/mappoint.cc.o"
   "CMakeFiles/g2o_driver.dir/src/g2o_driver.cc.o"
   "CMakeFiles/g2o_driver.dir/src/parser.cc.o"
   "../bin/g2o_driver.pdb"

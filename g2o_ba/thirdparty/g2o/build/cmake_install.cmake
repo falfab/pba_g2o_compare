@@ -1,4 +1,4 @@
-# Install script for directory: /home/nvidia/orb_slam_cuda/Thirdparty/g2o
+# Install script for directory: /home/nvidia/pba_g2o_compare/g2o_ba/thirdparty/g2o
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)
@@ -40,5 +40,5 @@ endif()
 
 string(REPLACE ";" "\n" CMAKE_INSTALL_MANIFEST_CONTENT
        "${CMAKE_INSTALL_MANIFEST_FILES}")
-file(WRITE "/home/nvidia/orb_slam_cuda/Thirdparty/g2o/build/${CMAKE_INSTALL_MANIFEST}"
+file(WRITE "/home/nvidia/pba_g2o_compare/g2o_ba/thirdparty/g2o/build/${CMAKE_INSTALL_MANIFEST}"
      "${CMAKE_INSTALL_MANIFEST_CONTENT}")

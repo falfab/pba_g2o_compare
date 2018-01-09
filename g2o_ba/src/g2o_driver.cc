@@ -1,9 +1,11 @@
 #include <iostream>
 
 #include "parser.h"
+#include "mappoint.h"
+#include "keyframe.h"
 
 /**
- *  @Author: Falezza Fabio
+ *  @Author: Falezza Fabio, Davide Miglioranzi
  *  This is a driver for bundle adjustment done with g2o.
  *  Usage:
  *  g2o_driver [input_file] [output_file]
@@ -29,6 +31,11 @@ int main(int argc, char *argv[])
 
     driver::Parser *parser = new driver::Parser(input_filename, output_filename);
 
-    delete parser;
+    std::vector<MapPoint *> vMp;
+    std::vector<KeyFrame *> vKf;
+
+    parser->ParseFile(vKf, vMp);
+
+    // delete parser;
     return 0;
 }

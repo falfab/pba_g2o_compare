@@ -7,11 +7,11 @@ C_FLAGS =   -Wall -W -O3 -DNDEBUG -O3 -march=native -fPIC
 
 C_DEFINES = -DUNIX -Dg2o_EXPORTS
 
-C_INCLUDES = -I/home/nvidia/orb_slam_cuda/Thirdparty/g2o/core -I/home/nvidia/orb_slam_cuda/Thirdparty/g2o/types -I/home/nvidia/orb_slam_cuda/Thirdparty/g2o/stuff -I/usr/include/eigen3 
+C_INCLUDES = -I/home/nvidia/pba_g2o_compare/g2o_ba/thirdparty/g2o/core -I/home/nvidia/pba_g2o_compare/g2o_ba/thirdparty/g2o/types -I/home/nvidia/pba_g2o_compare/g2o_ba/thirdparty/g2o/stuff -I/usr/include/eigen3 
 
 CXX_FLAGS =   -Wall -W -O3 -DNDEBUG -O3 -march=native -fPIC   -std=gnu++11
 
 CXX_DEFINES = -DUNIX -Dg2o_EXPORTS
 
-CXX_INCLUDES = -I/home/nvidia/orb_slam_cuda/Thirdparty/g2o/core -I/home/nvidia/orb_slam_cuda/Thirdparty/g2o/types -I/home/nvidia/orb_slam_cuda/Thirdparty/g2o/stuff -I/usr/include/eigen3 
+CXX_INCLUDES = -I/home/nvidia/pba_g2o_compare/g2o_ba/thirdparty/g2o/core -I/home/nvidia/pba_g2o_compare/g2o_ba/thirdparty/g2o/types -I/home/nvidia/pba_g2o_compare/g2o_ba/thirdparty/g2o/stuff -I/usr/include/eigen3 
 

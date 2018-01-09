@@ -123,6 +123,33 @@ g2o_driver/fast:
 	$(MAKE) -f CMakeFiles/g2o_driver.dir/build.make CMakeFiles/g2o_driver.dir/build
 .PHONY : g2o_driver/fast
 
+src/bundle_adjustment.o: src/bundle_adjustment.cc.o
+
+.PHONY : src/bundle_adjustment.o
+
+# target to build an object file
+src/bundle_adjustment.cc.o:
+	$(MAKE) -f CMakeFiles/g2o_driver.dir/build.make CMakeFiles/g2o_driver.dir/src/bundle_adjustment.cc.o
+.PHONY : src/bundle_adjustment.cc.o
+
+src/bundle_adjustment.i: src/bundle_adjustment.cc.i
+
+.PHONY : src/bundle_adjustment.i
+
+# target to preprocess a source file
+src/bundle_adjustment.cc.i:
+	$(MAKE) -f CMakeFiles/g2o_driver.dir/build.make CMakeFiles/g2o_driver.dir/src/bundle_adjustment.cc.i
+.PHONY : src/bundle_adjustment.cc.i
+
+src/bundle_adjustment.s: src/bundle_adjustment.cc.s
+
+.PHONY : src/bundle_adjustment.s
+
+# target to generate assembly for a file
+src/bundle_adjustment.cc.s:
+	$(MAKE) -f CMakeFiles/g2o_driver.dir/build.make CMakeFiles/g2o_driver.dir/src/bundle_adjustment.cc.s
+.PHONY : src/bundle_adjustment.cc.s
+
 src/g2o_driver.o: src/g2o_driver.cc.o
 
 .PHONY : src/g2o_driver.o
@@ -149,6 +176,60 @@ src/g2o_driver.s: src/g2o_driver.cc.s
 src/g2o_driver.cc.s:
 	$(MAKE) -f CMakeFiles/g2o_driver.dir/build.make CMakeFiles/g2o_driver.dir/src/g2o_driver.cc.s
 .PHONY : src/g2o_driver.cc.s
+
+src/keyframe.o: src/keyframe.cc.o
+
+.PHONY : src/keyframe.o
+
+# target to build an object file
+src/keyframe.cc.o:
+	$(MAKE) -f CMakeFiles/g2o_driver.dir/build.make CMakeFiles/g2o_driver.dir/src/keyframe.cc.o
+.PHONY : src/keyframe.cc.o
+
+src/keyframe.i: src/keyframe.cc.i
+
+.PHONY : src/keyframe.i
+
+# target to preprocess a source file
+src/keyframe.cc.i:
+	$(MAKE) -f CMakeFiles/g2o_driver.dir/build.make CMakeFiles/g2o_driver.dir/src/keyframe.cc.i
+.PHONY : src/keyframe.cc.i
+
+src/keyframe.s: src/keyframe.cc.s
+
+.PHONY : src/keyframe.s
+
+# target to generate assembly for a file
+src/keyframe.cc.s:
+	$(MAKE) -f CMakeFiles/g2o_driver.dir/build.make CMakeFiles/g2o_driver.dir/src/keyframe.cc.s
+.PHONY : src/keyframe.cc.s
+
+src/mappoint.o: src/mappoint.cc.o
+
+.PHONY : src/mappoint.o
+
+# target to build an object file
+src/mappoint.cc.o:
+	$(MAKE) -f CMakeFiles/g2o_driver.dir/build.make CMakeFiles/g2o_driver.dir/src/mappoint.cc.o
+.PHONY : src/mappoint.cc.o
+
+src/mappoint.i: src/mappoint.cc.i
+
+.PHONY : src/mappoint.i
+
+# target to preprocess a source file
+src/mappoint.cc.i:
+	$(MAKE) -f CMakeFiles/g2o_driver.dir/build.make CMakeFiles/g2o_driver.dir/src/mappoint.cc.i
+.PHONY : src/mappoint.cc.i
+
+src/mappoint.s: src/mappoint.cc.s
+
+.PHONY : src/mappoint.s
+
+# target to generate assembly for a file
+src/mappoint.cc.s:
+	$(MAKE) -f CMakeFiles/g2o_driver.dir/build.make CMakeFiles/g2o_driver.dir/src/mappoint.cc.s
+.PHONY : src/mappoint.cc.s
 
 src/parser.o: src/parser.cc.o
 
@@ -186,9 +267,18 @@ help:
 	@echo "... edit_cache"
 	@echo "... rebuild_cache"
 	@echo "... g2o_driver"
+	@echo "... src/bundle_adjustment.o"
+	@echo "... src/bundle_adjustment.i"
+	@echo "... src/bundle_adjustment.s"
 	@echo "... src/g2o_driver.o"
 	@echo "... src/g2o_driver.i"
 	@echo "... src/g2o_driver.s"
+	@echo "... src/keyframe.o"
+	@echo "... src/keyframe.i"
+	@echo "... src/keyframe.s"
+	@echo "... src/mappoint.o"
+	@echo "... src/mappoint.i"
+	@echo "... src/mappoint.s"
 	@echo "... src/parser.o"
 	@echo "... src/parser.i"
 	@echo "... src/parser.s"
