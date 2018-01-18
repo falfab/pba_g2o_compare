@@ -10,8 +10,10 @@ class MapPoint
     long int id;
     cv::Mat world_pose;
     
-    // Keyframes observing the point and associated index in keyframe
+    // Keyframes observing the point 
     std::vector<KeyFrame*> observations;
+
+    std::map<KeyFrame*, size_t> mObs;
 };
 
 #endif

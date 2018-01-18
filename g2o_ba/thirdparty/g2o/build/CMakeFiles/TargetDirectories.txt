@@ -1,3 +1,0 @@
-/home/nvidia/pba_g2o_compare/g2o_ba/thirdparty/g2o/build/CMakeFiles/edit_cache.dir
-/home/nvidia/pba_g2o_compare/g2o_ba/thirdparty/g2o/build/CMakeFiles/rebuild_cache.dir
-/home/nvidia/pba_g2o_compare/g2o_ba/thirdparty/g2o/build/CMakeFiles/g2o.dir

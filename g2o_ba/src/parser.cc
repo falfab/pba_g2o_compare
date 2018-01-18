@@ -2,9 +2,17 @@
 #include <iostream>
 #include <fstream>
 
+#define CX 0
+#define CY 0
+
+/**
+ *  @Author: Falezza Fabio, Davide Miglioranzi
+ *  This is the class which parse the files in PBA file format
+ */
+
 namespace driver
 {
-Parser::Parser(char *in, char *out) : in_file(in), out_file(out) {}
+Parser::Parser(char *in) : in_file(in) {}
 
 void Parser::ParseFile(std::vector<KeyFrame *> &vKf, std::vector<MapPoint *> &vMp)
 {
@@ -14,21 +22,20 @@ void Parser::ParseFile(std::vector<KeyFrame *> &vKf, std::vector<MapPoint *> &vM
         //lettura della prima riga di intestazione
         int numKF, numMP, numOBS;
         file >> numKF >> numMP >> numOBS; //leggo la prima riga di intestazione
-        std::cout << numKF << " " << numMP << " " << numOBS << std::endl;
 
         //lettura Observations
-        std::vector<observation_ids> vObs_id;
+        std::vector<observation> vObs;
         for (int i = 1; i <= numOBS; i++)
         {
             int idKF, idMP;
             float xn, yn;
             file >> idKF >> idMP >> xn >> yn;
-            std::cout << idKF << " " << idMP << " " << xn << " " << yn << std::endl;
-
-            observation_ids ids;
-            ids.keyframe_id = idKF;
-            ids.mappoint_id = idMP;
-            vObs_id.push_back(ids);
+            observation obs;
+            obs.keyframe_id = idKF;
+            obs.mappoint_id = idMP;
+            obs.pos.pt.x = xn;
+            obs.pos.pt.y = yn;
+            vObs.push_back(obs);
         }
 
         //lettura KeyFrames
@@ -39,8 +46,6 @@ void Parser::ParseFile(std::vector<KeyFrame *> &vKf, std::vector<MapPoint *> &vM
             float t1, t2, t3;
             float f, k1, k2;
             file >> r1 >> r2 >> r3 >> t1 >> t2 >> t3 >> f >> k1 >> k2;
-            std::cout << r1 << " " << r2 << " " << r3 << " " << t1 << " " << t2 << " " << t3 << " " << f << " " << k1 << " " << k2 << std::endl;
-
             cv::Mat rotVec = (cv::Mat_<float>(3, 1) << t1, t2, t3); //salvo le rotazioni in un vettore
             cv::Mat rotMat = cv::Mat::zeros(4, 4, CV_64F);
             cv::Rodrigues(rotVec, rotMat); //converto il vettore delle rotazioni in matrice 3x3
@@ -53,8 +58,12 @@ void Parser::ParseFile(std::vector<KeyFrame *> &vKf, std::vector<MapPoint *> &vM
             keyframe->pose = poseMat;
             keyframe->fx = f;
             keyframe->fy = f;
-            keyframe->cx = 0; //TODO: chidere cosa va qui
-            keyframe->cy = 0; //TODO: chidere cosa va qui
+            keyframe->cx = CX;
+            keyframe->cy = CY;
+
+            for (auto obs : vObs)
+                if (obs.keyframe_id == i)
+                    keyframe->vObs_pos.push_back(obs.pos);
 
             vKf.push_back(keyframe);
         }
@@ -68,11 +77,10 @@ void Parser::ParseFile(std::vector<KeyFrame *> &vKf, std::vector<MapPoint *> &vM
             MapPoint *mp = new MapPoint();
             mp->id = i;
             mp->world_pose = (cv::Mat_<float>(3, 1) << x, y, z);
-            std::vector<KeyFrame *> vObs;
-            for (auto ob : vObs_id)
+            std::map<KeyFrame *, size_t> mObs;
+            for (auto ob : vObs)
                 if (ob.mappoint_id == i)
-                    vObs.push_back(vKf.at(ob.keyframe_id));
-            mp->observations = vObs;
+                    mp->mObs.insert(std::pair<KeyFrame *, size_t>(vKf.at(ob.keyframe_id), ob.mappoint_id));
             vMp.push_back(mp);
         }
         file.close();

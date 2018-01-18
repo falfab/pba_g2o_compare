@@ -3,11 +3,11 @@
 
 #include "keyframe.h"
 #include "mappoint.h"
-
+#include <chrono>
 
 class BundleAdjustment {
     public:
-        void Execute(const std::vector<KeyFrame *> &vpKFs, const std::vector<MapPoint *> &vpMP);
+        long int Execute(const std::vector<KeyFrame *> &vpKFs, const std::vector<MapPoint *> &vpMP);
 };
 
 #endif

@@ -56,22 +56,6 @@ namespace g2o {
 
   OptimizationAlgorithmLevenberg::~OptimizationAlgorithmLevenberg()
   {
-    // Adding time counting
-    if(!times.empty())
-    {
-        std::ofstream timesFile;
-        timesFile.open ("timesOptimizationAlgorithmLevenberg.csv", std::ios_base::app);
-        for(times_t t : times)
-        {
-            timesFile << t.frame << ";";
-            timesFile << t.name  << ";";
-            timesFile << t.level << ";";
-            timesFile << t.time  << ";";
-            timesFile << t.time / 1000000.0 << ";";
-            timesFile << std::endl;
-        }
-        timesFile.close();
-    }
   }
 
   OptimizationAlgorithm::SolverResult OptimizationAlgorithmLevenberg::solve(int iteration, bool online)

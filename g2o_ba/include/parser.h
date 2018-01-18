@@ -12,27 +12,23 @@ namespace driver
         {
         public:
             // constructor
-            Parser(char* in, char* out);
+            Parser(char* in);
             ~Parser();
             
 
             char* GetInputFile() { return in_file; }
-            char* GetOutputFile() { return out_file; }
-
-            // std::vector<KeyFrame*> ParseKeyFrames();
-            // std::vector<MapPoint*> ParseMapPoints();
 
             void ParseFile(std::vector<KeyFrame*> &vKf, std::vector<MapPoint*> &vMp);
 
         private:
             char *in_file;
-            char *out_file;
 
     };
-    struct observation_ids
+    struct observation
     {
         int keyframe_id;
         int mappoint_id;
+        cv::KeyPoint pos;
     };
 }
 
